@@ -1,20 +1,18 @@
 import { defineConfig } from 'astro/config';
 
-import icon from "astro-icon";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  // Set your site URL
-  // site: 'https://site.url',
-  
+  site: 'https://rol4nd909.github.io',
+
   // update the `base` to your needs
-  // base: '',
-  
+  base: '/astro-cube-tw-boilerplate/',
+
   scopedStyleStrategy: "where",
   integrations: [tailwind({
     applyBaseStyles: false,
     config: './tailwind.config.ts',
     nesting: true,
-  }), icon()],
+  })],
 });
